@@ -43,9 +43,15 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
 }
 
+abstract {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f2f3f4;
+}
+  
 /* Clear floats after the columns */
 section::after {
   content: "";
@@ -108,8 +114,10 @@ footer {
 </header>
 
 <section>
-  <h1>Abstract:</h1>
-  <p>Text</p>
+  <abstract>
+    <h1>Abstract:</h1>
+    <p>Text</p>
+  </abstract>
 </section>
   
 <section style="color:black;">
