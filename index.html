@@ -1,152 +1,176 @@
-<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-  height: 300px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px;
-}
-
-abstract {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #979A9A;
-}
-  
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  font-size: 20px;
-  padding: 30px;
-  margin: auto;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
-
-<!style for tablets>
-  <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 30%;
-    }
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-    p.ex1 {
-      margin-left: 250px;
-    }
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-  .mySlides {display:none;}
-  </style>
 </head>
 <body>
 
 <header>
-  <h2><img src="download-2.png" alt="Banner" width="900" height="300"</h2>
+  <h2><img src="download-2.png" alt="Banner" width="60%" height="5%"></h2>
   <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
-  <h2>Student URN: 6815495</h2
+  <h2>Student URN: 6815495</h2>
+
+  <h2 style="font-family:calibri; font-size:60px;"><b>Conference paper:<br> Data Modelling of Crime Using Data Mining</b></h2>
 </header>
 
-<header>
-  <h2 style="font-family:calibri; font-size:60px;"><b>Conference paper:<br> Data Modelling of Crime using Data Mining</b></h2>
-</header>
-
-<section>
-  <abstract>
+<section style="color: black;">
+  <abstract style="height: fit-content;">
+    <a name="abstract"></a>
     <h1>Abstract:</h1>
-    <p style="font-size: 16px;">In this article, you will read all about how data mining can be used to analyse crime patterns and how it can be used to lower crime rates.</p>
+    <p style="font-size: 16px;">In a time dominated by technology, data has become a powerful tool across various sectors, including law enforcement. With crime rates increasing across the world, the use of data modelling and data mining techniques in understanding and combating crime has become increasingly important. Using the vast amounts of data available, the process begins with an analysis of historical crime data to identify recurrent patterns in hotspot locations. Using complementary data mining techniques, like association rule mining and clustering analysis, law enforcement can uncover hidden patterns, trends, and relationships, significantly contributing to the prevention of criminal activities by estimating the likelihood of specific crimes occurring at particular times and locations. This article talks about the combination of data modelling and data mining, shedding light on how data mining works and the effectiveness of law enforcement efforts in predicting crime.</p>
   </abstract>
-</section>
-  
-<section style="color:black;">
-  <nav>
-    <h1>Contents:</h1>
-    <ul style="text-align: left;">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-  </nav>
   
   <article>
-    <h1>Header</h1>
-    <p>Para 1</p>
-    <p>Para 2</p>
+    <a name="crime-data"></a>
+    <h2>Type of Crime Data:</h2>
+    
+    <p>Lots of different types of data are collected by law enforcement each day. This information includes but is not limited to incident reports, arrest records and spatial-temporal data. This is where data modelling and data mining come into play. They analyse the data uncovering complex patterns and relationships that may be crucial for predicting and preventing crime. These techniques are even more useful when there is a vast amount of data that needs to be looked through. </p>
+    
+    <a name="data-modelling"></a>
+    <h2>Data Modelling in Crime Analysis:</h2>
+    <p>Within large datasets, there are lots of underlying structures and relationships and data modelling involves creating abstract representations of these relationships. They can take various forms, including: </p>
+    <ul>
+      <li>Entity-relationship diagrams:</li>
+        <ul>
+          <li>A powerful tool for visualising the relationships between entities in datasets. Entities can represent various elements such as criminals, victims, locations and types of crime. By mapping out these relations, law enforcement may be able to identify potential hotspots and other insights that may not be apparent through traditional analysis. </li>
+        </ul>
+      <li>Spatial Models:</li>
+        <ul>
+          <li>This involves analysing the geographical distribution of crimes to identify patterns. By putting crime data on maps, law enforcement can identify crime hotspots. Geographical Information System (GIS) technology is commonly used for this. </li>
+        </ul>
+      <li>Temporal Models:</li>
+        <ul>
+          <li>Looking at patterns of crime over time is crucial for predicting and preventing future crime. These patterns can be helpful for optimising patrol schedules, enhancing surveillance during high-risk periods, and developing targeted intervention strategies. </li>
+        </ul>
+    </ul>
+    <a name="data-mining"></a>
+    <h2>What is data mining?</h2>
+    <p>Data mining is the process of finding patterns in large data sets. The police collect lots of data about crime, and it would take a long time to go through all of it. Data mining finds trends in this data which the police can then use as a model. There are many steps that data mining must follow to make it efficient. These are:</p>
+      
+    <ul style="text-align: left;">
+      <il>Stage 1: Collects all the data it possibly can as it then can find more patterns which will increase the usefulness of the model.<br></il>
+      <il>Stage 2: Data cleaning. This will remove any errors, clean any missing values, and in general, make the data available to use.<br></il>
+      <il>Stage 3: Data scientists start looking at the data and try and find any possible patterns in the data, and to gain a better understanding of what the data is showing.<br></il>
+      <il>Stage 4, Data preparation is the process of making sure that the data is clean, consistent, and ready for analysis.<br></il>
+      <il>Stage 5: The analysis starts to take place. Various data mining methods will be used to find patterns and trends in the data, which include:<br></il>
+      <p></p>
+      <ul>
+        <li>Clustering: </li>
+          <ul>
+            <li>The process of grouping similar data points together</li>
+          </ul>
+        <li>Classification: </li>
+          <ul>
+            <li>It involves assigning a class label to each instant in a dataset based on its features. The goal is to create a model that predicts the next class labels of instances based on their features.</li>
+          </ul>
+        <li>Regression:</li>
+          <ul>
+            <li>The process of predicting the next data value to find any anomalies in the data.</li>
+          </ul>
+        <li>Association rule mining:</li>
+          <ul>
+            <li>If/then statements that help discover relationships between the databases</li>
+          </ul>
+        <li>Anomaly detection:</li>
+        <ul>
+          <li>Identifies data points that are outliers in the normal dataset.</li>
+        </ul>
+      </ul>
+      <p></p>
+      <il>Stage 6: Pattern recognition is used to identify patterns and trends in the data. These patterns are used to find more patterns in the underlying data.<br></il>
+      <il>Stage 7: Validation is the process of ensuring that patterns that have been found are reliable. This process can include running new data through the pattern to see if it works.<br></il>
+      <il>Stage 8: The final stage. Interpreting the results of the patterns and taking appropriate action. As seen in Figure 1, this is how the data may be presented and stored.<br></il>
+    </ul>
+    
+    <img src="Crime Data image.png" alt="Crime Data" width="328" height="380">
+    <p>Figure 1: Crime Data information (zeemaps 2009)</p>
+    
+    <a name="benefits-challenges"></a>
+    <h2>Benefits and Challenges of Data Modelling and Data Mining in Crime Analysis:</h2>
+    <h1>Benefits: </h1>
+    <ul>
+      <li>Proactive Crime Prevention:</li>
+        <ul>
+          <li>By uncovering hidden patterns, law enforcement can take proactive measures to help prevent crimes before they occur. This enables agencies to manage resources better and focus on areas with a higher likelihood of criminal activity. </li>
+        </ul>
+      <li>Resource Optimisation:</li>
+        <ul>
+          <li>Since law enforcement agencies, would be able to locate hotpots, they can allocate the resources accordingly. This can help the effectiveness of crime prevention. </li>
+        </ul>
+      <li>Improved Investigation:</li>
+        <ul>
+          <li>The insights gained from data modelling and mining can help with criminal investigations. Associations and potential subjects can be identified quicker which will allow a faster response and increase the likelihood of solving cases.  </li>
+        </ul>
+    </ul>
+    <h1>Challenges: </h1>
+    <ul>
+      <li>Data Quality and Avaliability:</li>
+        <ul>
+          <li>If the data is incomplete or inaccurate, this can lead to misleading results and affect the reliability of insights found from these techniques. </li>
+        </ul>
+      <li>Privacy concerns:</li>
+        <ul>
+          <li>Finding the balance between using data for public safety and safeguarding individual privacy will sometimes be complicated or controversial, but very necessary.</li>
+        </ul>
+      <li>Interdisciplinary Collaboration:</li>
+        <ul>
+          <li>The effectiveness of data modelling and mining requires law enforcement agencies, data scientists and experts in relevant fields to find an effective way of working together. </li>
+        </ul>
+      <li>Ethical Considerations:</li>
+        <ul>
+          <li>Ethical concerns, including the presence of bias in algorithms and the risk of discriminatory results, need to be addressed. Ensuring these techniques are used ethically is crucial to maintaining public trust in law enforcement.</li>
+        </ul>
+    </ul>
+
+    <a name="conclusion"></a>
+    <h2>Conclusion:</h2>
+    <p>The combination of data modelling and data mining in crime analysis changes the way law enforcement goes about dealing with the complexities of criminal activity. It is not just about reacting to crime anymore but preventing crime before they occur. While there are potential problems, the benefits, like smarter resource use, and enhanced investigative capabilities, make the use of data-driven approaches a vital component in modern policing. 
+      <br>
+      <br>
+      As technology continues to improve, the combination of data modelling and data mining will become even more important. This means law enforcement will gain an increasingly powerful tool in ensuring public safety. However, ensuring the right balance is crucial. Ensuring that ethical and privacy concerns are addressed properly is imperative. If this can be done, data will become a vital step in helping to predict crime. 
+    </p>
+    
+       
   </article>
+
+  <div class="middle-column">
+    <div id="box5">
+      <nav style="height: fit-content;">
+        <h1 style="font-size: 22px;">Contents:</h1>
+        <ul style="text-align: left; font-size: 18px;">
+          <li><a href="#abstract"> Abstract</a></li>
+          <li><a href="#crime-data"> Types of Crime Data</a></li>
+          <li><a href="#data-modelling"> Data Modelling in Crime Analysis</a></li>
+          <li><a href="#data-mining"> What is data mining?</a></li>
+          <li><a href="#benefits-challenges">Benefits and Challenges of Data Modelling and Data Mining in Crime Analysis</a></li>
+          <li><a href="#conclusion"> Conclusion</a></li>
+          <li><a href="#references"> References</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="box6">
+      <a name="references"></a>
+      <p style="text-align: left; margin-left: 40px;">References:</p>
+      <ol style="text-align: left; font-size: 12px;">
+        <li> Cohen, R. (no date) What is Anomaly Detection? Examining the Essentials. Avaliable at: <a href="https://www.anodot.com/blog/what-is-anomaly-detection/#:~:text=Anomaly%20detection%20(aka%20outlier%20analysis,a%20change%20in%20consumer%20behavior">https://www.anodot.com/blog/what-is-anomaly-detection/#:~:text=Anomaly%20detection%20(aka%20outlier%20analysis,a%20change%20in%20consumer%20behavior</a> (Accessed: 25 October 2023)</li>
+        <li> Ria, A. (2022) An Overview of Association Rule Mining & its Applications. Available at: <a href="https://www.upgrad.com/blog/association-rule-mining-an-overview-and-its-applications/">https://www.upgrad.com/blog/association-rule-mining-an-overview-and-its-applications/</a> (Accessed: 25 October 2023)</li>
+        <li> Sharma, R. (2022) Regression in Data Mining: Different Types of Regression Techniques. Avaliable at: <a href="https://www.upgrad.com/blog/regression-in-data-mining/#">https://www.upgrad.com/blog/regression-in-data-mining/#</a> (Accessed: 25 October 2023)</li>
+        <li> Utkarsh. (2023) What is Clustering in Data Mining?. Available at: <a href="https://www.scaler.com/topics/what-is-clustering-in-data-mining/#">https://www.scaler.com/topics/what-is-clustering-in-data-mining/#</a> (Accessed: 25 October 2023)</li>
+        <li> Yerpude, P., Gudur, V. (2017) 'PREDICTIVE MODELLING OF CRIME DATASET USING DATA MINING', International Journal of Data Mining & Knowledge Management Process, Vol.7, No.4, pp. 43-58. Available at: <a href="https://doi.org/10.5121/ijdkp.2017.7404">https://doi.org/10.5121/ijdkp.2017.7404</a> (Accessed 25 October 2023)</li>
+        <li> zeemaps, 2009. Crime Map - How to Create in ZeeMaps[Online], digital image, accessed 29 November 2023, Avaliable at: <a href="https://www.zeemaps.com/blog/crime-map/">https://www.zeemaps.com/blog/crime-map/</a> </li>        
+        <li> Basic Concept of Classification (Data Mining) (2023) Available at: <a href="https://www.geeksforgeeks.org/basic-concept-classification-data-mining/">https://www.geeksforgeeks.org/basic-concept-classification-data-mining/</a> (Accessed: 25 October 2023).</li>
+        <li> OpenAI ChatGPT (2023) ChatGPT response to William Mitchell, 25 October</li>
+    </div>
+  </div>
+  
 </section>
 
-<footer>
-  <p>References:</p>
-  <ol style="text-align: left; font-size: 16px;">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
+<footer style="height: fit-content;">
 </footer>
 
 </body>
