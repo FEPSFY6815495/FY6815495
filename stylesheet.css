@@ -115,3 +115,39 @@ p.ex1 {
     display:none;
 }
 
+<style>
+    /* Style to center the image */
+    #slide-container {
+        text-align: centre;
+        position: relative;
+    }
+    
+    /* Style for the buttons */
+    .button-container {
+        position: absolute;
+        buttom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -100px; /* Add some margin between the image and buttons */
+    }
+    
+    .button {
+        padding: 10px 20px;
+        packground-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 50px; /* Add some margin between the buttons */
+}
+
+.slide-number-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -50px; /* Add some margin between the slide number buttons and the image */
+}
+
+</style>
